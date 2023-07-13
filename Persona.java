@@ -2,33 +2,29 @@ public class Persona {
 
     String name;
     String surname;
-    int age;
-    String favoriteColor;
-    static int numPers;
+    static int numPersons;
 
-    Persona(String name, String surname, int age, String favoriteColor){
+    Persona(String name, String surname){
 
         this.name = name;
         this.surname = surname;
-        this.age = age;
-        this.favoriteColor = favoriteColor;
-        numPers++;
+        numPersons++;
     }
 
     void greet(Persona greeted) {
         System.out.println("Hello " + greeted.name + " " + "I'm " + this.name + " " + this.surname);
     }
 
-    int sum(int a, int b) {
-        return a + b;
+    void greet() {
+        System.out.println("Hello !");
     }
 
     public String toString() {
-        String recap = this.name + "\n" + this.surname + "\n" + this.age + "\n" + this.favoriteColor;
+        String recap = this.name + "\n" + this.surname;
         return recap;
     }
 
     static void total() {
-        System.out.println("Numero totale di persone: " + numPers);
+        System.out.println("Total number of persons: " + numPersons);
     }
 }

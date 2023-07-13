@@ -1,13 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        Persona person1 = new Persona("hero", "jones", 24, "red");
-        Persona person2 = new Persona("lucy", "Hones", 27, "pink");
+        // Parent class
+        Persona person1 = new Persona("hero", "jones");
+        Persona person2 = new Persona("lucy", "Hones");
 
-        final String test = "play";
+        //child class
+        Student students1 = new Student("keen", "Herman");
+        Teacher teacher1 = new Teacher("lewis", "Hamilton");
 
-        Persona.total();
-        person1.greet(person2);
-        person2.greet(person1);
+        teacher1.greet();
     }
 }
 
