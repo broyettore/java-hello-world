@@ -1,10 +1,14 @@
 public class Student extends Persona {
 
-    String favoriteSubject = "history";
-    String classroom = "32B";
-    int[] votes = {7, 9, 8};
-    Student(String name, String surname) {
+    String favoriteSubject;
+    String classroom;
+    int[] votes;
+    Student(String name, String surname, String favoriteSubject, String classroom, int[] votes) {
         super(name, surname);
+
+        this.favoriteSubject = favoriteSubject;
+        this.classroom = classroom;
+        this.votes = votes;
     }
 
     void status() {

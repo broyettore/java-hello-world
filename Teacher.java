@@ -1,9 +1,12 @@
 public class Teacher extends Persona {
 
-    String subject = "Math";
-    String[] classrooms = {"32B", "33B", "34B"};
-    Teacher(String name, String surname) {
+    String subject;
+    String[] classrooms;
+    Teacher(String name, String surname, String subject, String[] classrooms) {
         super(name, surname);
+
+        this.subject = subject;
+        this.classrooms = classrooms;
     }
 
     @Override
