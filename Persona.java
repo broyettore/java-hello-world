@@ -12,4 +12,17 @@ public class Persona {
         this.age = age;
         this.favoriteColor = favoriteColor;
     }
+
+    void greet() {
+        System.out.println("Hello i'm"  + this.name + " " + this.surname);
+    }
+
+    int sum(int a, int b) {
+        return a + b;
+    }
+
+    public String toString() {
+        String recap = this.name + "\n" + this.surname + "\n" + this.age + "\n" + this.favoriteColor;
+        return recap;
+    }
 }

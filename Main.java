@@ -1,9 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        Persona test1 = new Persona("roy", "bagnarola", 25, "black");
-        Persona test2 = new Persona("lucy", "wild", 22, "pink");
+        Persona person1 = new Persona("hero", "jones", 24, "red");
+        Persona person2 = new Persona("lucy", "Hones", 27, "pink");
+        Persona person3 = new Persona("don", "Suzy", 22, "grey");
 
-        System.out.println(test1.name + test1.surname);
-        System.out.println(test2.name + test2.surname);
+        Persona[] persone = {person1, person2, person3};
+
+        for (int i = 0; i < persone.length; i++) {
+            System.out.println(persone[i]);
+        }
     }
 }
+
+
+
+
