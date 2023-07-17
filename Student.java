@@ -10,6 +10,10 @@ public class Student extends Persona {
         this.classroom = classroom;
         this.votes = votes;
     }
+    Student(String name, String surname) {
+        super(name, surname);
+
+    }
 
     void status() {
         System.out.println("I'm studying");

@@ -1,10 +1,18 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
-        Persona person1 = new Persona(25, "developer");
-        person1.setAge(28);
+        Student student1 = new Student("joshua", "Parks");
+        Teacher teacher1 = new Teacher("art", "lehman");
 
-        System.out.println(person1.getAge());
+        Persona[] classroom = {student1, teacher1};
+
+        for (Persona person: classroom
+             ) {
+            person.greet();
+        }
+
     }
 }
 

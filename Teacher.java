@@ -8,6 +8,10 @@ public class Teacher extends Persona {
         this.subject = subject;
         this.classrooms = classrooms;
     }
+    Teacher(String name, String surname) {
+        super(name, surname);
+
+    }
 
     @Override
     void greet() {
