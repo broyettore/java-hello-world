@@ -1,18 +1,29 @@
-import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        Student student1 = new Student("joshua", "Parks");
-        Teacher teacher1 = new Teacher("art", "lehman");
+        Scanner scanner = new Scanner(System.in);
 
-        Persona[] classroom = {student1, teacher1};
+        try {
+            System.out.println("Insert a number");
+            int x = scanner.nextInt();
 
-        for (Persona person: classroom
-             ) {
-            person.greet();
+            System.out.println("Insert a second number");
+            int y = scanner.nextInt();
+
+            int result = x/y;
+            System.out.println("The result is: " + result);
+        } catch (ArithmeticException e) {
+            System.out.println("You can't divide by 0");
+        } catch (InputMismatchException e) {
+            System.out.println("You can't divide by a string");
+        } catch (Exception e ) {
+            System.out.println("There's been a problem");
+        } finally {
+            scanner.close();
         }
-
     }
 }
 
